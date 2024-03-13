@@ -9,15 +9,15 @@ return (
 <>
 <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Haustar</Navbar.Brand>
+          <Navbar.Brand href="#home">HAUSTAR</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#pricing">Service</Nav.Link>
             <Nav.Link href="#pricing">Contact</Nav.Link>
           </Nav>
+          <CartWidget/>
         </Container>
       </Navbar>
-<CartWidget/>
 </>
 );
 };
