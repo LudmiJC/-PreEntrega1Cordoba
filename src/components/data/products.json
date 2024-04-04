@@ -1,0 +1,65 @@
+[
+  {
+    "id": 0,
+    "title": "Rifle Francotirador XT-2000",
+    "description": "1 shot, 1 down",
+    "price": 5000,
+    "pictureUrl": "0.jpg",
+    "category": "Armas de Fuego",
+    "brand": "Karmac"
+  },
+  {
+    "id": 1,
+    "title": "Casco EL-300",
+    "description": "No hay nada que proteja más tu cesera que esto, chum!",
+    "price": 950,
+    "pictureUrl": "1.jpg",
+    "category": "Vestimenta",
+    "brand": "Elventine"
+  },
+  {
+    "id": 2,
+    "title": "Granada Frag K-BOOM-35",
+    "description": "BOOM CHAKALAKA!!!",
+    "price": 99,
+    "pictureUrl": "2.png",
+    "category": "Explosivos",
+    "brand": "Boomcha"
+  },
+  {
+    "id": 3,
+    "title": "Granada Frago K-BOOM-95",
+    "description": "Chum, no se te ocurra usar esto en un espacio cerrado...",
+    "price": 149,
+    "pictureUrl": "3.png",
+    "category": "Explosivos",
+    "brand": "Boomcha"
+  },
+  {
+    "id": 4,
+    "title": "Guantes EL-100",
+    "description": "Aparte de la protección, brinda un escándalo de facha.",
+    "price": 350,
+    "pictureUrl": "4.jpg",
+    "category": "Vestimenta",
+    "brand": "Elventine"
+  },
+  {
+    "id": 5,
+    "title": "Pistola Deagle DG-2000",
+    "description": "Esta era un arma icónica hace 100 años, y hoy lo sigue siendo.",
+    "price": 3200,
+    "pictureUrl": "5.jpg",
+    "category": "Armas de Fuego",
+    "brand": "Karmac"
+  },
+  {
+    "id": 6,
+    "title": "Rifle Asalto AB-20",
+    "description": "Lo normal, lo mínimo, lo indispensable.",
+    "price": 2300,
+    "pictureUrl": "6.jpeg",
+    "category": "Armas de Fuego",
+    "brand": "Aibuddy"
+  }
+]
