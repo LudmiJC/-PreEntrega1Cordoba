@@ -56,7 +56,7 @@ export const Item = ({ item }) => {
             fullWidth={true}
             className="bg-deep-orange-300 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100 mt-2"
           >
-            + Info
+            mas informacion sobre el libro
           </Button>
         </Link>
       </CardFooter>

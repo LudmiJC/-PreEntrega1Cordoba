@@ -19,10 +19,10 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="/"
+          to="category/home"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Inicio
+          Home
         </Link>
       </Typography>
       <Typography
@@ -32,10 +32,10 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="/category/armas%20de%20fuego"
+          to="/category/novedades"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Armas de Fuego
+         Novedades
         </Link>
       </Typography>
       <Typography
@@ -45,10 +45,10 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="/category/vestimenta"
+          to="/category/mas vendidos"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Vesimenta
+          Mas vendidos
         </Link>
       </Typography>
       <Typography
@@ -58,10 +58,10 @@ function NavList() {
         className="p-1 font-medium"
       >
         <Link
-          to="/category/explosivos"
+          to="/category/populares"
           className="flex items-center hover:text-blue-500 transition-colors"
         >
-          Explosivos
+          Populares
         </Link>
       </Typography>
       <CartWidget />
@@ -91,7 +91,7 @@ export function NavBar() {
             to="/"
             className="flex items-center hover:text-purple-500 transition-colors"
           >
-            MERC Armory
+            Fedlulibrary
           </Link>
         </Typography>
         <div className="hidden lg:block">
