@@ -3,7 +3,7 @@
     "id": 1,
     "title": "El acto de crear",
     "description": "libro",
-    "price": 5000,
+    "price": 10000,
     "pictureUrl": "01.jpg",
     "category": "home",
     "brand": "libro"
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "En mi vida falto yo",
     "description": "libro",
-    "price": 950,
+    "price": 10000,
     "pictureUrl": "02.jpg",
     "category": "home",
     "brand": "libro"
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "El camino del despertar",
     "description": "libro",
-    "price": 99,
+    "price": 5000,
     "pictureUrl": "03.jpg",
     "category": "novedades",
     "brand": "libro"
@@ -30,7 +30,7 @@
     "id": 4,
     "title": "Cómo ser el protagonista de tu bienestar",
     "description": "libro",
-    "price": 149,
+    "price": 5000,
     "pictureUrl": "04.jpg",
     "category": "novedades",
     "brand": "libro"
@@ -39,7 +39,7 @@
     "id": 5,
     "title": "¿Amor o adicción?",
     "description": "libro",
-    "price": 350,
+    "price": 3500,
     "pictureUrl": "05.jpg",
     "category": "mas vendidos",
     "brand": "libro"
@@ -48,7 +48,7 @@
     "id": 6,
     "title": "Libera tus sombras",
     "description": "libro",
-    "price": 3200,
+    "price": 3500,
     "pictureUrl": "06.jpg",
     "category": "mas vendidos",
     "brand": "libro"
@@ -57,7 +57,7 @@
     "id": 7,
     "title": "Habitos Atomicos",
     "description": "libro",
-    "price": 2300,
+    "price": 2500,
     "pictureUrl": "07.jpg",
     "category": "populares",
     "brand": "libro"
