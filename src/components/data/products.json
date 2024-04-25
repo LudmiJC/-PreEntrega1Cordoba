@@ -4,8 +4,8 @@
     "title": "El acto de crear",
     "description": "libro",
     "price": 10000,
-    "pictureUrl": "01.jpg",
-    "category": "home",
+    "imageId": "01.jpg",
+    "categoryId": "home",
     "brand": "libro"
   },
   {
@@ -13,8 +13,8 @@
     "title": "En mi vida falto yo",
     "description": "libro",
     "price": 10000,
-    "pictureUrl": "02.jpg",
-    "category": "home",
+    "imageId": "02.jpg",
+    "categoryId": "home",
     "brand": "libro"
   },
   {
@@ -22,8 +22,8 @@
     "title": "El camino del despertar",
     "description": "libro",
     "price": 5000,
-    "pictureUrl": "03.jpg",
-    "category": "novedades",
+    "imageId": "03.jpg",
+    "categoryId": "novedades",
     "brand": "libro"
   },
   {
@@ -31,8 +31,8 @@
     "title": "Cómo ser el protagonista de tu bienestar",
     "description": "libro",
     "price": 5000,
-    "pictureUrl": "04.jpg",
-    "category": "novedades",
+    "imageId": "04.jpg",
+    "categoryId": "novedades",
     "brand": "libro"
   },
   {
@@ -40,8 +40,8 @@
     "title": "¿Amor o adicción?",
     "description": "libro",
     "price": 3500,
-    "pictureUrl": "05.jpg",
-    "category": "mas vendidos",
+    "imageId": "05.jpg",
+    "categoryId": "mas vendidos",
     "brand": "libro"
   },
   {
@@ -49,8 +49,8 @@
     "title": "Libera tus sombras",
     "description": "libro",
     "price": 3500,
-    "pictureUrl": "06.jpg",
-    "category": "mas vendidos",
+    "imageId": "06.jpg",
+    "categoryId": "mas vendidos",
     "brand": "libro"
   },
   {
@@ -58,8 +58,8 @@
     "title": "Habitos Atomicos",
     "description": "libro",
     "price": 2500,
-    "pictureUrl": "07.jpg",
-    "category": "populares",
+    "imageId": "07.jpg",
+    "categoryId": "populares",
     "brand": "libro"
   }
 ]

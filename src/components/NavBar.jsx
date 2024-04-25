@@ -4,7 +4,8 @@ import {
   Collapse,
   Typography,
   IconButton,
-} from "@material-tailwind/react";
+} 
+from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { CartWidget } from "./CartWidget";
 import { Link } from "react-router-dom";
