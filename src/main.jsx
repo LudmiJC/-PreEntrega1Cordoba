@@ -1,9 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
 import { initializeApp } from "firebase/app";
 import { ThemeProvider } from "@material-tailwind/react";
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+import "./index.css";
+import App from "./App.jsx";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAdBguNsJjDV8vYUD5Beh8mZMZVJeBCmZE",
@@ -15,6 +17,7 @@ const firebaseConfig = {
 };
 
 initializeApp(firebaseConfig);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

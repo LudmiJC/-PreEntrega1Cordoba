@@ -26,7 +26,7 @@ export const ItemDetailsContainer = () => {
       <div className="flex flex-col min-w-[390px] wsm:flex-col md:flex-row p-8 bg-gray-300">
         <img
           className="h-96 w-96 rounded-lg object-cover object-center border-gray-700 border-2"
-          src={`/src/assets/products/${item.pictureUrl}`}
+          src={`./assets/products/${item.imageId}`}
           alt={item.title}
         />
         <div className="flex flex-col ml-5">
