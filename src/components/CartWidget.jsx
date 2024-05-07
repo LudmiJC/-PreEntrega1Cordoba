@@ -1,12 +1,24 @@
-import { ShoppingCartIcon } from "@heroicons/react/24/solid";
-import { Badge, IconButton } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../components/contexts/CartContext";
+
+import carrito from "../assets/cart.png";
 
 export const CartWidget = () => {
+  const { items } = useContext(CartContext);
+
+  const total = items.reduce(
+    (acumulador, valorActual) => acumulador + valorActual.quantity,
+    0
+  );
+  if(!total) return null;
+
   return (
-    <Badge content="0" withBorder className="font-bold">
-      <IconButton size="sm">
-        <ShoppingCartIcon className="h-4 w-4" />
-      </IconButton>
-    </Badge>
+    <Link to="/cart">
+      <div id="cart-widget">
+        <img src={carrito} alt="Carrito de Compras" height={40} />
+        <span>{total}</span>
+      </div>
+    </Link>
   );
 };
