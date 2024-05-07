@@ -1,8 +1,11 @@
 import { Item } from "./item";
 
-export const ItemList = ({ products }) => {
-  const productList = products || [];
-  return productList.map((product) => (
-  <Item product={product} key={product.id} />
-));
+export const ItemList = ({ items }) => {
+  return (
+    <div className="List">
+      {items.map((item) => (
+        <Item key={item.id} item={item} />
+      ))}
+    </div>
+  );
 };

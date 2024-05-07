@@ -1,9 +1,7 @@
 import { initializeApp } from "firebase/app";
-import { ThemeProvider } from "@material-tailwind/react";
-
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import { CartProvider } from "./components/contexts/CartContext.jsx";
 import "./index.css";
 import App from "./App.jsx";
 
@@ -19,10 +17,10 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 
 
+initializeApp(firebaseConfig);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>
+    <CartProvider>
+        <App />
+    </CartProvider>
 );

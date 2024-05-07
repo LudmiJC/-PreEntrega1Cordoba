@@ -1,21 +1,24 @@
-import { Button, Card } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 
-export const Item = ({ product }) => {
+export const Item = ({ item }) => {
   return (
-    <Card>
-      <Card.Img className="self-start w-80 mt-2" src={product.imageId} />
+    <Card
+      style={{
+        margin: "1.5px",
+        backgroundColor: "#f8f9fa",
+      }}
+    >
+      <Card.Img variant="top" src={item.imageId} className="ItemImg" />
       <Card.Body>
-        <Card.Title>{product.title}</Card.Title>
-        <Card.Text>{product.description}</Card.Text>
-        <Card.Text>{product.categoryId}</Card.Text>
-        <Link to={`/item/${product.id}`} className="text-decoration-none">
-          <Button
-            variant="primary"
-            className="mt-3"
-          >
-            Agregar al Carrito
-          </Button>
+        <Card.Title>{item.title}</Card.Title>
+        <Card.Text>{item.description}</Card.Text>
+        <Card.Text>${item.price}</Card.Text>
+        <Card.Text>{item.categoryId}</Card.Text>
+        <Card.Text>Stock {item.stock}</Card.Text>
+        <Link to={`/item/${item.id}`}>
+          <Button variant="primary">Detalle</Button>
         </Link>
       </Card.Body>
     </Card>
