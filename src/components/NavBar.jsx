@@ -7,15 +7,13 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
     return (
-        <>
-            <Navbar className="NavBar">
-                <Container fluid="sm" >
-                    <NavLink to="/" className="titulo_NavBar">Library</NavLink>
-                    <Nav>
-                    </Nav>
-                    <CartWidget />
-                </Container>
-            </Navbar>
-        </>
+        <Navbar className="NavBar">
+            <Container fluid="sm">
+                <NavLink to="/" className="titulo_NavBar">Library</NavLink>
+                <Nav>
+                </Nav>
+                <CartWidget />
+            </Container>
+        </Navbar>
     );
 };

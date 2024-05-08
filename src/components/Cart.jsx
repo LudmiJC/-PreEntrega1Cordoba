@@ -68,16 +68,10 @@ export const Cart = () => {
   };
 
   return (
-    <Container className="container"
-      style={{ backgroundColor: "#D5C1FC" }}
-    >
-      <
-      >
-      </>
+    <Container className="container" style={{ backgroundColor: "#D5C1FC" }}>
       <table>
         <thead>
-          <tr
-          >
+          <tr>
             <th>NOMBRE</th>
             <th>CANTIDAD</th>
             <th>PRECIO</th>
@@ -98,42 +92,41 @@ export const Cart = () => {
         </tbody>
       </table>
       <button onClick={clear}>VACIAR 🛒</button>
-      <
-      >
-        DATOS
-      </>
       <form className="form-container">
         <div>
-          <label>Ingrese su Nombre</label>
+          <label htmlFor="name">Ingrese su Nombre</label>
           <input
             type="text"
             value={buyer.name}
             name="name"
+            id="name"
             onChange={handleChangue}
           />
-          {formError.name && <p style={{ color: "#F2F5EA" }}> ingrese su nombre</p>}
+          {formError.name && <p style={{ color: "#F2F5EA" }}>Ingrese su nombre</p>}
         </div>
         <div>
-          <label>Ingrese su Celular</label>
+          <label htmlFor="phone">Ingrese su Celular</label>
           <input
             type="number"
             value={buyer.phone}
             name="phone"
+            id="phone"
             onChange={handleChangue}
           />
-          {formError.phone && <p style={{ color: "#F2F5EA" }}> ingrese su número de teléfono</p>}
+          {formError.phone && <p style={{ color: "#F2F5EA" }}>Ingrese su número de teléfono</p>}
         </div>
         <div>
-          <label>Ingrese su Email</label>
+          <label htmlFor="email">Ingrese su Email</label>
           <input
             type="email"
             value={buyer.email}
             name="email"
+            id="email"
             onChange={handleChangue}
           />
-          {formError.email && <p style={{ color: "#F2F5EA" }}> ingrese su correo electrónico</p>}
+          {formError.email && <p style={{ color: "#F2F5EA" }}>Ingrese su correo electrónico</p>}
         </div>
-        <button onClick={handledOrder}>COMPRAR</button>
+        <button type="button" onClick={handledOrder}>COMPRAR</button>
       </form>
     </Container>
   );

@@ -31,24 +31,34 @@ export const ItemListConteiner = () => {
       );
     }
 
+    setLoading(true); 
+
     getDocs(refCollection)
       .then((snapshot) => {
-        setItems(
-          snapshot.docs.map((doc) => {
-            return { id: doc.id, ...doc.data() };
-          })
-        );
+        const fetchedItems = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setItems(fetchedItems);
       })
-      .finally(() => setLoading(false));
+      .catch((error) => {
+        console.error("Error fetching items:", error);
+      })
+      .finally(() => {
+        setLoading(false); 
+      });
   }, [id]);
+
   return (
     <Container className="mt-4">
-      <h1
-        style={{ textAlign: "center", marginBottom: "20px", color: "#" }}
-      >
-       LIBROS MAS DESTACADOS
+      <h1 style={{ textAlign: "center", marginBottom: "20px" }}>
+        LIBROS MÁS DESTACADOS
       </h1>
-      <ItemList items={items} />
+      {loading ? (
+        <p>Cargando libros...</p>
+      ) : (
+        <ItemList items={items} />
+      )}
     </Container>
   );
 };
