@@ -63,12 +63,14 @@ export const Cart = () => {
           text: `Su orden: ${id} ha sido completada!!`,
           confirmButtonText: "Aceptar",
         });
+        setBuyer(initialValues);
+        clear();
       }
     });
   };
 
   return (
-    <Container className="container" style={{ backgroundColor: "#D5C1FC" }}>
+    <Container className="container" style={{ backgroundColor: "#E5ECF4" }}>
       <table>
         <thead>
           <tr>

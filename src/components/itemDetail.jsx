@@ -11,15 +11,15 @@ export const ItemDetail = ({ item }) => {
   return (
     <Container
       className="mt-4 text-center"
-      style={{ backgroundColor: "#e6f2fe" }}
+      style={{ backgroundColor: "#E5ECF4" }}
     >
       {item && (
         <>
-          <div>{item.title}</div>
-          <div>{item.categoryId}</div>
-          <div>Stock {item.stock}</div>
-          <div>${item.price}</div>
-          <img src={item.imageId} alt={item.title} />
+          <div className="title">{item.title}</div>
+          <div className="sub">{item.categoryId}</div>
+          <div className="stock">Stock {item.stock}</div>
+          <div className="precio">${item.price}</div>
+          <img className="img" src={item.imageId} alt={item.title} />
           <ItemCount onAdd={add} stock={item.stock} />
         </>
       )}
